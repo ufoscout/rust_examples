@@ -1,25 +1,17 @@
-pub fn get_true() -> bool {
-    true
-}
-
-pub fn get_false() -> bool {
-    return false;
-}
+pub mod function;
 
 #[cfg(test)]
 mod tests {
-    use super::get_true;
+    use super::function;
+    use super::function::functions;
 
     #[test]
     fn get_true_shold_return_true() {
-        assert_eq!(true, get_true());
+        assert_eq!(true, functions::get_true());
     }
 
-/*
     #[test]
-    #[should_fail]
-    fn it_should_pass_even_if_panic() {
-        assert!(false);
+    fn get_false_shold_return_false() {
+        assert!(!function::functions::get_false());
     }
-    */
 }

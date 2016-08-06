@@ -8,7 +8,7 @@ mod tests {
 
     #[test]
     fn fundamentals_get_true_shold_return_true() {
-        assert_eq!(true, fundamentals::get_true());
+        assert_eq!(true, fundamentals::function::functions::get_true());
     }
 
 /*

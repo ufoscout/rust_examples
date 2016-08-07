@@ -1,3 +1,4 @@
+pub mod example;
 pub mod function;
 
 #[cfg(test)]
